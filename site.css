@@ -1,0 +1,21 @@
+.proc-box {
+	width: 300px;
+	height: 300px;
+	padding: 3px;
+	position: relative;
+}
+
+div {
+	display: inline-block;
+}
+
+.proc-box-row {
+	width: window.innerWidth - 20;
+	height: 310px;
+	padding: 10px;
+}
+
+body {
+	background-color: #404040;
+	text-align: center;
+}
