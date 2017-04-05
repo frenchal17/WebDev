@@ -12,7 +12,15 @@ div {
 .proc-box-row {
 	width: window.innerWidth - 20;
 	height: 310px;
-	padding: 10px;
+	padding: 5px;
+}
+
+.left-box {
+	align-self: left;
+}
+
+.right-box {
+	align-self: right;
 }
 
 body {
