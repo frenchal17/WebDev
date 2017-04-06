@@ -5,9 +5,9 @@
 	position: relative;
 }
 
-div {
+/*div {
 	display: inline-block;
-}
+}*/
 
 .proc-box-row {
 	width: window.innerWidth - 20;
@@ -15,15 +15,19 @@ div {
 	padding: 5px;
 }
 
-.left-box {
-	align-self: left;
+.left {
+	float:left;
 }
 
-.right-box {
-	align-self: right;
+.right { 
+	float:right;
+}
+
+.center {
+	margin:0 auto;
 }
 
 body {
 	background-color: #404040;
-	text-align: center;
+	/*text-align: center;*/
 }
