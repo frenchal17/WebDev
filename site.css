@@ -39,6 +39,10 @@
 	font-size: 200%;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
 	background-color: #404040;
 }
