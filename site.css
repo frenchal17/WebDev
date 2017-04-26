@@ -5,10 +5,6 @@
 	position: relative;
 }
 
-/*div {
-	display: inline-block;
-}*/
-
 .proc-box-row {
 	width: window.innerWidth - 20;
 	height: 310px;
@@ -27,7 +23,22 @@
 	margin:0 auto;
 }
 
+.centered-boxes {
+	width: 50%;
+	height: 300px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.centered-text {
+	padding-top: 75px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 200%;
+}
+
 body {
 	background-color: #404040;
-	/*text-align: center;*/
 }

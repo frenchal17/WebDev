@@ -13,13 +13,13 @@ float w = .8;
 //Look at c = .05, 2, 3, 5
 //Comment out stroke.
 void draw(){
-  a = 100 + 100 * sin(w * x); 
+  a = 150 * sin(w * x); 
   x = x + c;
   fill(40,40,155 + 155 * sin(x));
   //stroke(255,255,255);
   float offset;
   for (offset = 0; offset < 8; offset += 0.1) {
-    ellipse(2 + 40 * offset, 150 - sin(x + offset), r, r);
+    ellipse(2 + 40 * offset, 150 - a * sin(x + offset), r, r);
   }
 }
 
