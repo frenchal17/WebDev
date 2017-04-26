@@ -11,9 +11,16 @@ float m = 150;
 float xc = 0;
 float yc = 20;
 float zc = 0;
+float fillComponent;
 void draw() {
-  t += c;
-  stroke(xc*t, yc*t, zc*t);
+  if (mousePressed) {
+    t -= c;
+    fillComponent -= .5*c;
+  } else {
+    t += c;
+    fillComponent += 1.25*c;
+  }
+  stroke(xc*fillComponent, yc*fillComponent, zc*fillComponent);
   line(x + m * sin(t), y - m * cos(t), 
   x + m * sin(t + 2 * PI/3), y - m * cos(t + 2 * PI/3));
   line(x + m * sin(t + 2 * PI/3), y - m * cos(t + 2 * PI/3), 
@@ -25,6 +32,7 @@ void draw() {
   } 
   else {
     t = 0;
+    fillComponent = 0;
     xc = random(0,50);
     yc = random(0,50);
     zc = random(0,50);
