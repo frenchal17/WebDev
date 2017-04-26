@@ -15,7 +15,6 @@ void draw() {
   c++;
   noStroke();
   int opacity = (int)((mouseX + mouseY)/64);
-  //fill(0,opacity);
   fill(0,10);
   if (c >= opacity) {
     rect(-5,-5,width + 5,height + 5);

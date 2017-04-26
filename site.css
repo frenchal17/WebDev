@@ -31,12 +31,20 @@
 }
 
 .centered-text {
-	padding-top: 75px;
+	padding-top: 50px;
 	line-height: 50px;
 	text-align: center;
 	color: white;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 200%;
+}
+
+.sub-text {
+	text-align: center;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	padding-top: 20px;
 }
 
 *:focus {
