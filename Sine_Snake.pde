@@ -1,6 +1,5 @@
 void setup(){
   size(300,300);
-  //background(255,255,255);
   background(0,0,0);
 }
 
@@ -16,20 +15,15 @@ void draw(){
   a = 150 * sin(w * x); 
   x = x + c;
   fill(40,40,155 + 155 * sin(x));
-  //stroke(255,255,255);
   float offset;
   for (offset = 0; offset < 8; offset += 0.1) {
     ellipse(2 + 40 * offset, 150 - a * sin(x + offset), r, r);
   }
 }
 
-void keyPressed(){
-  if (key == 's'){
-    saveFrame("####.png");
-  }
-}
-
 void mousePressed(){
-  w = random(0,3);
+  float oldW = w;
+  w = random(0,1) * 3;
+  x = x * w / oldW;
 }
 
