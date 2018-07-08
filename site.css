@@ -3,12 +3,28 @@
 	height: 300px;
 	padding: 3px;
 	position: relative;
+	opacity: 0.3;
+}
+
+.proc-box:hover {
+	opacity: 1.0;
 }
 
 .proc-box-row {
 	width: window.innerWidth - 20;
 	height: 310px;
 	padding: 5px;
+}
+
+.proc-box-window {
+	width: window.innerWidth - 20;
+	height: window.innerHeight - 20;
+}
+
+canvas {
+	display: block;
+	position: relative;
+	margin: 0 auto;
 }
 
 .left {
@@ -53,4 +69,13 @@
 
 body {
 	background-color: #404040;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }
